@@ -424,7 +424,7 @@ export const editMessage = async (req, res) => {
     if (message.senderId.toString() !== userId.toString()) {
       return res.status(403).json({ message: "You can only edit your own messages" });
     }
-
+//commit
     // Can't edit if deleted for everyone
     if (message.deletedForEveryone) {
       return res.status(400).json({ message: "Cannot edit a deleted message" });
