@@ -20,7 +20,7 @@ export const useChatStore = create((set, get) => ({
     localStorage.setItem("isSoundEnabled", !get().isSoundEnabled);
     set({ isSoundEnabled: !get().isSoundEnabled });
   },
-
+//commit
   setActiveTab: (tab) => set({ activeTab: tab }),
   setSelectedUser: (selectedUser) => {
     set({ selectedUser, messages: [], pendingMessages: new Set() }); // Clear messages when switching users
